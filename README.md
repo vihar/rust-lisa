@@ -28,14 +28,13 @@ Also verify installion guide << Link >>
 
 ### Say hello to Rust !
 
-Now lets get started with our traditional program, "Hello World "
-Our program starts with main function, statements after the main function will be exectued while complied.
+Now let's get started with our traditional program, "Hello World "
+Our program begins with the main function, statements after the main function will be executed while complied.
 
-println! is called as macro which is similar to a function but ends with an exclamation/bang "!",
-but instead of function call, macros are expanded into source code that gets compiled
+println! is called as a macro which is similar to a function but ends with an exclamation/bang "!", but instead of a function call, macros are expanded into source code that gets compiled
 with the rest of program.
 
-Now to run our program first we need to compile our code using the command 'rustc file_name.rs'
+Now to run our program first, we need to compile our code using the command 'rustc file_name.rs'
 which then generates a binary file which should to executed.
 
 **helloworld.rs**
@@ -54,16 +53,13 @@ Hello World!
 
 ### Comments
 
-As we know every programming language needs comments, Rust supports a few different varities of comments, which are ignored by the compiler.
-
+As we know every programming language needs comments, Rust supports a few different varieties of comments, which are ignored by the compiler.
 These are the types of comments which we often use.
 
 ```
-// - Single line comments which go the end of the line.
-
-/**/ - Multiple line comments which go to the cloing delimeter.
+// — Single line comments which go the end of the line.
+/* */ — Multiple line comments which go to the closing delimiter.
 ```
-
 **comments.rs**
 
 ```rust
@@ -78,22 +74,21 @@ fn main(){
 }
 ```
 
-### Varaibles
+### Variables
 
-A variable is a piece of storage that contains a value. In Rust it’s easy to define a variable and set a value to it. Imagine you want to store the number 3 in a variable called three. 
+A variable is a piece of storage that contains a value. In Rust, it’s easy to define a variable and set a value to it. Imagine you want to store the number 1in a variable called one. 
 
 ```rust
 let one  = 1;
 ```
 
-As simple as that ! You just assigned the variable three to the value 3, let is used to introduce a binding.
+As simple as that! You just assigned the variable one to the value 1, let is used to introduce a binding.
 
 ### Type Annotation
 
-Rust offers you to declare variables of your own size, as rust is a statically typed language we can
-specify our types up front, and they’re checked at compile time.
+Rust offers you to declare variables of your own size, as rust is a statically typed language we can specify our types up front, and they’re checked at compile time.
 
-Here is an example of declaring 32-bit signed integer. We use let for binding, followed by variable name and the type, size which come after a colon (:).
+Here is an example of declaring 32-bit signed integer. We use let for binding, followed by a variable name and the type, size which come after a colon (:).
 
 ```rust
 let x: i32 = 19;
@@ -103,8 +98,7 @@ Rust has many different primitive integer types. They begin with i for signed in
 
 ### Mutability
 
-In Rust when you declare a variable, the bindings are immutable which means we cant change the value 
-of the variable.
+In Rust when you declare a variable, the bindings are immutable which means we cant change the value of the variable.
 
 ```rust
 fn main(){
@@ -127,8 +121,10 @@ This piece of code gives an error it shows re-assignment of immutable variable `
 If you want a binding to be mutable, you can use keyword mut.
 
 ```rust
+fn main(){
 let mut x = 5; // mut x: i32
 x = 10;
+}
 ```
 
 ### Data Types
@@ -192,7 +188,7 @@ println!("The first element of the array is: {}", array[0]);
 
 Tuples : fixed-size ordered list of elements of different(or same) data types
 
-Declaration of tuples is similar to array instead we use "( )" instead of "[ ]".
+Declaration of tuples is similar to an array. Instead we use "( )" instead of "[ ]".
 
 ```rust
 let a = (1, 1.5, true, 'a', "Hello, world!");
@@ -203,7 +199,7 @@ Tuples are also immutable by default and even with mut, its element count can no
 
 6. Strings 
 
-A str is a "String Slice", and is the most primitive string type.
+An str is a "String Slice," and is the most primitive string type.
 
 ```rust
 let str = "Hello! I'm a String";
@@ -278,8 +274,6 @@ Rust currently provides three approaches to performing some kind of iterative ac
 
 Rust also has a while loop. It looks like this:
 
-let mut x = 5; // mut x: i32
-let mut done = false; // mut done: bool
 
 ```rust
 fn main() {
