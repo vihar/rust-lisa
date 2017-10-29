@@ -112,6 +112,73 @@ x = 10;
 
 ### Data Types
 
+Primitive Data Types in Rust
 
+1. Boolean
 
+A standard boolean. Can be either true or false.
 
+```rust
+let t = true;
+let f = false;
+```
+
+2. char
+
+A 4 byte character.
+
+```rust
+let a = 'a';
+let b = 'b';
+let love = '<3';
+```
+
+3. Numeric Types
+
+Intergers
+
+These types include i8, i16, i32, i64, isize, u8, u16, u32, u64, usize. The letter denotes whether it is signed (i) or unsigned (u), and the number denotes the size of the integer. So the type i8 is an 8 bit, integer and a u64 is an unsigned, 64 bit integer. isize and usize are dependent upon the architecture of the computer.
+
+```rust
+let date = 19;
+let life = 35;
+let miles = 91010101;
+```
+
+Floats
+
+These types include f32 and f64. A floating point number is what we typically refer to as a decimal.
+
+```rust
+let pi = 3.14;
+let e = 2.718;
+```
+
+4. Array
+
+An array is fixed-size, collection of same-type elements.
+
+It is declared like:
+
+```rust
+let name: [type; size] = [elem1, elem2, elem3, elem4];
+
+let my_array: [i32; 3] = [19, 24, 2];
+println!("The first element of the array is: {}", array[0]);
+```
+
+5. Strings 
+
+A str is a "String Slice", and is the most primitive string type.
+
+```rust
+let str = "Hello! I'm a String";
+```
+
+Now something that trips some people when getting started with rust is printing variables. In order to print this we would need to write:
+
+```rust
+println!("The value of our variable is: {}", str);
+```
+
+Which is similar to Python Formmating.
