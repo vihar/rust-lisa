@@ -1,9 +1,12 @@
 # Introduction/History
 
 
-Rust is a modern systems programming language focusing on safety, speed, and concurrency. It accomplishes these goals by being memory safe without using garbage collection.
+Rust is a systems programming language focusing on safety, speed, and concurrency. It accomplishes these goals by being memory safe without using Garbage Collection.
 
-Let’s get started with some basics!
+Rust is a very modern language. It uses LLVM on its backend. Rust supports a mixture of imperative procedural, concurrent actor, object-oriented and pure functional styles. It also supports generic programming and metaprogramming, in both static and dynamic styles.
+
+### Installation
+
 
 ### Say hello to Rust !
 
@@ -195,6 +198,17 @@ println!("The value of our variable is: {}", str);
 ```
 
 Which is similar to Python formatting.
+
+7. Vectors
+
+In Rust vectors store their contents as contiguous arrays of T on the heap. This means that they must be able to know the size of T at compile time (that is, how many bytes are needed to store a T?).
+
+You can create them with the vec! macro:
+```rust 
+let v = vec![1, 2, 3, 4, 5];
+
+println!("The third element of v is {}", v[2]);
+```
 
 
 ### Control Flow
