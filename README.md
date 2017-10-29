@@ -181,4 +181,99 @@ Now something that trips some people when getting started with rust is printing 
 println!("The value of our variable is: {}", str);
 ```
 
-Which is similar to Python Formmating.
+Which is similar to Python formatting.
+
+
+### Control Flow
+
+If-Else Statements
+
+We always need the ability to check the conditions and change the behavior of the program accordingly. The conditional statements give us the ability; the simplest form is the ‘if’ statement.
+
+The most common constructs that let you control the flow of execution of Rust code are if expressions and loops.
+
+Example 
+
+```rust
+let team_size = 7;
+if team_size < 5 {
+    println!("Small");
+} else if team_size < 10 {
+    println!("Medium");
+} else {
+    println!("Large");
+}
+```
+
+Multiple conditions with elif
+
+We can have multiple conditions by combining if and else in an else if expression. For example:
+
+```rust
+fn main() {
+    let number = 6;
+
+    if number % 4 == 0 {
+        println!("number is divisible by 4");
+    } else if number % 3 == 0 {
+        println!("number is divisible by 3");
+    } else if number % 2 == 0 {
+        println!("number is divisible by 2");
+    } else {
+        println!("number is not divisible by 4, 3, or 2");
+    }
+}
+```
+
+Loops
+
+Rust currently provides three approaches to performing some kind of iterative activity. They are: loop, while and for. Each approach has its own set of uses.
+
+1. While
+
+Rust also has a while loop. It looks like this:
+
+let mut x = 5; // mut x: i32
+let mut done = false; // mut done: bool
+
+```rust
+fn main() {
+	let mut a = 1;
+	while a <= 10 {
+		println!("Current value : {}", a);
+	a += 1; //no ++ or -- in Rust
+	}
+}
+```
+
+2. For
+
+For loops in rust is used for iterating based on the given start postition and end position. Rust’s for loop doesn’t look like this “C-style” for loop, it looks like this.
+
+```rust
+fn main(){
+	for x in 0..10 {
+    println!("{}", x); // x: i32
+	}
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
