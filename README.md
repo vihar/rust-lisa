@@ -167,7 +167,20 @@ let my_array: [i32; 3] = [19, 24, 2];
 println!("The first element of the array is: {}", array[0]);
 ```
 
-5. Strings 
+5. Tuple
+
+Tuples : fixed-size ordered list of elements of different(or same) data types
+
+Declaration of tuples is similar to array instead we use "( )" instead of "[ ]".
+
+```rust
+let a = (1, 1.5, true, 'a', "Hello, world!");
+// a.0 = 1, a.1 = 1.5, a.2 = true, a.3 = 'a', a.4 = "Hello, world!"
+```
+
+Tuples are also immutable by default and even with mut, its element count can not be changed. Also if you want to change an element’s value, new value should have the same data type of previous value.
+
+6. Strings 
 
 A str is a "String Slice", and is the most primitive string type.
 
@@ -259,6 +272,51 @@ fn main(){
 ```
 
 
+### Functions
+
+Every Rust program has at least one function, the main function:
+
+```rust
+fn main() {
+}
+```
+In rust to declare functions we use fn keyword followed by the function name, some parentheses where we include the arguments if we have any.
+
+Now let's write a function where we can add two integers.
+
+```rust
+fn main() {
+    print_sum(5, 6);
+    print_sum(19, 24);
+}
+
+fn print_sum(x: i32, y: i32) {
+    println!("sum is: {}", x + y);
+}
+```
+You separate arguments with a comma, both when you call the function, as well as when you declare it.
+
+Functions with return type.
+
+By default functions return empty tuple (). If you want to return a value, return type must be specified after -> .
+
+```rust
+fn main(){
+	let a = plus_one(1);
+	println!("The value of a is returning from a function : {}",a );
+	let b = plus_two(5);
+	println!("The value of b is returning from a function : {}",b );
+}
+
+fn plus_one(a: i32) -> i32 {
+    a + 1 //no ; means an expression, return a+1
+}
+
+fn plus_two(a: i32) -> i32 {
+    return a + 2; //return a+2 but bad practice, 
+    //should use only on conditional returnes, except it's last expression 
+}
+```
 
 
 
