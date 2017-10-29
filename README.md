@@ -7,6 +7,24 @@ Rust is a very modern language. It uses LLVM on its backend. Rust supports a mix
 
 ### Installation
 
+If you're on Linux or a Mac, all you need to do to install Rust is power up your terminal and run :
+
+```
+$ curl -sf -L https://static.rust-lang.org/rustup.sh | sh
+```
+
+If you're on Windows, please download either the 32-bit installer or the 64-bit installer and run it.
+
+If you've got Rust installed, you can open up a shell, and type this:
+
+$ rustc --version
+rustc 1.20.0
+
+Which gives you the rust version installed.
+
+Also verify installion guide << Link >>
+
+## Getting Started
 
 ### Say hello to Rust !
 
