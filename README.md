@@ -154,7 +154,7 @@ let love = '<3';
 
 Intergers
 
-These types include i8, i16, i32, i64, isize, u8, u16, u32, u64, usize. The letter denotes whether it is signed (i) or unsigned (u), and the number denotes the size of the integer. So the type i8 is an 8 bit, integer and a u64 is an unsigned, 64 bit integer. isize and usize are dependent upon the architecture of the computer.
+These types include i8, i16, i32, i64, isize, u8, u16, u32, u64, usize. The letter denotes whether it is signed (i) or unsigned (u), and the number denotes the size of the integer. So the type i8 is a signed, 8 bit integer and a u64 is an unsigned, 64 bit integer. isize and usize are dependent upon the architecture of the computer.
 
 ```rust
 let date = 19;
